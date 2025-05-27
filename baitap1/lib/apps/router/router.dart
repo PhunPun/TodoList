@@ -2,6 +2,9 @@
 import 'package:baitap1/apps/router/router_name.dart';
 import 'package:baitap1/pages/tuan2/bai_tap2.dart';
 import 'package:baitap1/pages/tuan2/bai_th2.dart';
+import 'package:baitap1/pages/tuan3/baitap_3.dart';
+import 'package:baitap1/pages/tuan3/baitap_ui.dart';
+import 'package:baitap1/pages/tuan3/btvn3.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -13,7 +16,7 @@ class RouterCustum{
       path: '/',
       name: RouterName.baith1,
       builder: (BuildContext context, GoRouterState state) {
-        return const BaiTap2();
+        return const Btvn3();
       },
       // routes: <RouteBase>[
       //   GoRoute(
