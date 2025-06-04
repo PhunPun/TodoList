@@ -1,11 +1,10 @@
 
 import 'package:baitap1/apps/router/router_name.dart';
-import 'package:baitap1/pages/tuan2/bai_tap2.dart';
-import 'package:baitap1/pages/tuan2/bai_th2.dart';
-import 'package:baitap1/pages/tuan3/baitap_3.dart';
-import 'package:baitap1/pages/tuan3/baitap_ui.dart';
-import 'package:baitap1/pages/tuan3/btvn3.dart';
-import 'package:baitap1/pages/tuan4/baitap_4.dart';
+import 'package:baitap1/pages/libary_system/manager_page.dart';
+import 'package:baitap1/pages/libary_system/system_manager.dart';
+import 'package:baitap1/pages/verify_password/forgot_password_page.dart';
+import 'package:baitap1/pages/welcome/splash_page.dart';
+import 'package:baitap1/pages/welcome/get_started.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -15,9 +14,9 @@ class RouterCustum{
   routes: <RouteBase>[
     GoRoute(
       path: '/',
-      name: RouterName.baith1,
+      name: RouterName.splash,
       builder: (BuildContext context, GoRouterState state) {
-        return const Baitap4();
+        return ForgotPasswordPage();
       },
       // routes: <RouteBase>[
       //   GoRoute(
@@ -37,6 +36,27 @@ class RouterCustum{
       //     ]
       //   ),
       // ],
+    ),
+    GoRoute(
+      path: '/getstarted',
+      name: RouterName.getstarted,
+      builder: (BuildContext context, GoRouterState state) {
+        return const GetStarted();
+      },
+    ),
+    GoRoute(
+      path: '/systemmanager',
+      name: RouterName.systemmanager,
+      builder: (BuildContext context, GoRouterState state) {
+        return const SystemManager();
+      },
+    ),
+    GoRoute(
+      path: '/manager',
+      name: RouterName.manager,
+      builder: (BuildContext context, GoRouterState state) {
+        return const ManagerPage();
+      },
     ),
   ],
 );
