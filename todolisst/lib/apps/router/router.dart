@@ -2,9 +2,11 @@
 import 'package:baitap1/apps/router/router_name.dart';
 import 'package:baitap1/pages/libary_system/manager_page.dart';
 import 'package:baitap1/pages/libary_system/system_manager.dart';
+import 'package:baitap1/pages/login/login_page.dart';
 import 'package:baitap1/pages/verify_password/forgot_password_page.dart';
 import 'package:baitap1/pages/welcome/splash_page.dart';
 import 'package:baitap1/pages/welcome/get_started.dart';
+import 'package:baitap1/product/product_detail.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -16,7 +18,7 @@ class RouterCustum{
       path: '/',
       name: RouterName.splash,
       builder: (BuildContext context, GoRouterState state) {
-        return ForgotPasswordPage();
+        return ProductDetailPage();
       },
       // routes: <RouteBase>[
       //   GoRoute(

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "458768047915",
+    "project_id": "todolist-5cc21",
+    "storage_bucket": "todolist-5cc21.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458768047915:android:8afc4906d2eb6c3c3fef6e",
+        "android_client_info": {
+          "package_name": "com.example.baitap1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQbS7tgZ0l5U6VWbcbuLOnkSzsVqRn10c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
